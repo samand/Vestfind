@@ -1,0 +1,30 @@
+.footer-component p {
+    text-align:center;
+}
+
+.footer-component a {
+    display:block;
+    display:inline;
+    padding: 8px;
+}
+.footer-component ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-component li {
+    display:inline;
+}
+.footer-component li a:link{
+    color:black;
+}
+.footer-component li a:hover {
+    color:grey;
+}
+.footer-component li a:visited{
+    color:black;
+}
+.footer-component li a:active{
+    color:black;
+}
+

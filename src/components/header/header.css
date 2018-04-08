@@ -1,0 +1,38 @@
+.header-component h1{
+    text-align: center;
+}
+.header-component h3{
+    text-align: center;
+}
+.header-component #navigationBar{
+    float: right;
+}
+
+.header-component a{
+    display:block;
+    display:inline;
+    padding: 8px;
+}
+.header-component ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header-component li{
+    display:inline;
+}
+.header-component li a:link{
+    color:black;
+}
+.header-component li a:hover{
+    background-color: #111;
+    color:grey;
+}
+.header-component li a:visited{
+    color:black;
+}
+.header-component li a:active{
+    color:black;
+}
+
+

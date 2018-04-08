@@ -1,0 +1,9 @@
+export const HomePage = "/";
+export const AboutPage = "/about";
+export const AccountPage ="/account";
+export const LegalPage = "/legal";
+export const ContactPage = "/contact";
+export const SignInPage = "/signin";
+export const SignUpPage = "/signup";
+export const ProjectPage = "/projects";
+export const ForgotPasswordPage = "/forgotpassword";
