@@ -19,3 +19,27 @@ export const doPasswordReset = (email) =>
 // Password Change
 export const doPasswordUpdate = (password) =>
   auth.currentUser.updatePassword(password);
+
+// Get userId
+export const getCurrentUserId = () =>
+  auth.onAuthStateChanged(function (user) {
+    if (user) {
+      return user.uid;
+    }
+    else {
+      return null;
+    }
+  })
+export const getUserProfile = () =>
+  auth.onAuthStateChanged(function (user) {
+    if (user) {
+      console.log(user);
+      return user;
+    }
+    else {
+      console.log("no user");
+    }
+  })
+
+export const getOnStateChanged = () =>
+  console.log("tutak")

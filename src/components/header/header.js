@@ -29,7 +29,7 @@ const NavigationAuth = () =>
 		<li><Link to={routes.HomePage}>Vestfind</Link></li>
 		<li><Link to={routes.AboutPage}>About</Link></li>
 		<li><Link to={routes.ProjectPage}>Projects</Link></li>
-		<li><Link to={routes.AccountPage}>My Account</Link></li>		
+		<li><Link to={routes.AccountPage}>My Account</Link></li>	
 		<li><SignOutButton /></li>
 	</ul>
 

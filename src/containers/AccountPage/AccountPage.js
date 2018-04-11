@@ -2,7 +2,6 @@ import React from 'react';
 
 import AuthUserContext from '../../components/AuthUserContext';
 import withAuthorization from '../../components/withAuthorization';
-import ForgotPasswordForm from '../../components/ForgotPassword/ForgotPassword';
 import ChangePasswordForm from '../../components/ChangePassword/ChangePassword';
 
 const AccountPage = () =>
@@ -10,6 +9,7 @@ const AccountPage = () =>
     {authUser =>
       <div>
         <h1>Account: {authUser.email}</h1>
+        <p>uid: {console.log(authUser)}</p>
         <ChangePasswordForm />
       </div>
     }
