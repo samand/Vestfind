@@ -9,7 +9,10 @@ const AccountPage = () =>
     {authUser =>
       <div>
         <h1>Account: {authUser.email}</h1>
-        <p>uid: {console.log(authUser)}</p>
+        <p>uid: {authUser.uid}</p>
+        {console.log(authUser)}
+        {console.log(typeof(authUser))}
+        {console.log(authUser.uid)}
         <ChangePasswordForm />
       </div>
     }

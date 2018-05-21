@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Vest" id="fed16ab0-018b-40e3-be45-679ddd56bd0c" version="4.0.0">
+  <folder name="Strategy" id="84c4298f-b0a6-4ba2-852a-98c4b4331f6b" type="strategy"/>
+  <folder name="Business" id="d0256803-ac8e-4eaa-8612-997449dd874a" type="business"/>
+  <folder name="Application" id="7b7c3477-f8c4-483a-b15f-c43ef865e5f3" type="application"/>
+  <folder name="Technology &amp; Physical" id="5ccfc64f-6285-4baf-94ab-f75dcc32292c" type="technology"/>
+  <folder name="Motivation" id="e2597900-2273-4810-bdfc-f1b60d7d2404" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="e43b0850-4a7c-4c67-9443-a90a2a3106d4" type="implementation_migration"/>
+  <folder name="Other" id="efdffb29-9985-4517-8ff3-a450b4484e9b" type="other"/>
+  <folder name="Relations" id="b9da38c5-7a8e-42ab-a91e-1e5e41180c62" type="relations"/>
+  <folder name="Views" id="77f9d8f1-3bb4-4630-8ac6-5140b121b5ba" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="VestModel" id="41f03648-92b1-4956-9bc1-ad0cdd5129e2"/>
+  </folder>
+</archimate:model>

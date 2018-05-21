@@ -7,3 +7,4 @@ export const SignInPage = "/signin";
 export const SignUpPage = "/signup";
 export const ProjectPage = "/projects";
 export const ForgotPasswordPage = "/forgotpassword";
+export const CreateProjectPage = "/createproject";

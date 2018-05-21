@@ -1,8 +1,5 @@
-import React from 'react';
-import {
-	BrowserRouter as Router,
-	Route
-} from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import withAuthentication from './components/withAuthentication';
 import * as routes from './constants/routes';
 
@@ -19,32 +16,44 @@ import ProjectPage from './containers/ProjectPage/ProjectPage';
 import SignUpPage from './containers/SignUpPage/SignUpPage';
 import ForgotPasswordPage from './containers/ForgotPasswordPage/ForgotPasswordPage';
 import AccountPage from './containers/AccountPage/AccountPage';
+import CreateProjectPage from './containers/CreateProjectPage/CreateProjectPage'
 
 import './App.css';
 
-const App = () =>
-	<Router>
-		<div className="App">
-			<header className="App-header">
-				<Header />
-			</header>
-			<hr />
-			<Route path={routes.HomePage} exact component={HomePage} />
-			<Route path={routes.AboutPage} exact component={AboutPage} />
-			<Route path={routes.AccountPage} exact component={AccountPage} />
-			<Route path={routes.LegalPage} exact component={LegalPage} />
-			<Route path={routes.SignInPage} exact component={SignInPage} />
-			<Route path={routes.SignUpPage} exact component={SignUpPage} />
-			<Route path={routes.ContactPage} exact component={ContactPage} />
-			<Route path={routes.ProjectPage} exact component={ProjectPage} />
-			<Route path={routes.ForgotPasswordPage} exact component={ForgotPasswordPage} />
+class App extends Component {
+	constructor(props) {
+		super(props);
+	}
 
-			<footer className="App-footer">
-				<hr />
-				<Footer />
-			</footer>
-		</div>
-	</Router>
+	render() {
+		return (
+			<Router>
+				<div className="App">
+					<header className="App-header">
+						<Header />
+					</header>
+					<hr />
+					<Route path={routes.HomePage} exact component={HomePage} />
+					<Route path={routes.AboutPage} exact component={AboutPage} />
+					<Route path={routes.AccountPage} exact component={AccountPage} />
+					<Route path={routes.LegalPage} exact component={LegalPage} />
+					<Route path={routes.SignInPage} exact component={SignInPage} />
+					<Route path={routes.SignUpPage} exact component={SignUpPage} />
+					<Route path={routes.ContactPage} exact component={ContactPage} />
+					<Route path={routes.ProjectPage} exact component={ProjectPage} />
+					<Route path={routes.ForgotPasswordPage} exact component={ForgotPasswordPage} />
+					<Route path={routes.CreateProjectPage} exact component={CreateProjectPage} />
+
+					<footer className="App-footer">
+						<hr />
+						<Footer />
+					</footer>
+				</div>
+			</Router>
+
+		);
+	}
+}
 
 
 export default withAuthentication(App);
